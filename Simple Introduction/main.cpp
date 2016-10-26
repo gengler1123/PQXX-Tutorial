@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
 	try{
-		connection C("dbname=adg user=adg_user password=adg123 hostaddr=155.246.103.74 port=5432");
+		connection C("dbname='dbname' user='username' password='password' hostaddr='address' port=5432");
 		if (C.is_open())
 		{
 			cout << "Database " << C.dbname() << " opened." << endl;
